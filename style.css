@@ -67,3 +67,19 @@ h6 {
 #__next {
   isolation: isolate;
 }
+:root {
+  --cc-soft-blue: hsl(215, 51%, 70%);
+  --cc-cyan: hsl(178, 100%, 50%);
+  --cc-darker-blue: hsl(217, 54%, 11%);
+  --cc-dark-blue: hsl(216, 50%, 16%);
+  --cc-white: hsl(0%, 0%, 100%);
+
+  --ff-outfit: "Outfit";
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+}
+body {
+  display: grid;
+  place-items: center;
+}
