@@ -110,3 +110,30 @@ body {
 :is(.nft-card__info, .nft-card__timeline, .credit) {
   color: var(--cc-soft-blue);
 }
+
+.nft-card__price-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+:is(.nft-card__price, .nft-card__timeline) {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+[data-price="price"]::before {
+  display: inline-block;
+  content: "";
+  background-image: url(./images/icon-ethereum.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  margin-top: 2px;
+}
+[data-time="time"]::before {
+  display: inline-block;
+  content: "";
+  background-image: url(./images/icon-clock.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  margin-top: 3px;
+}
