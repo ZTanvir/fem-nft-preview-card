@@ -72,7 +72,7 @@ h6 {
   --cc-cyan: hsl(178, 100%, 50%);
   --cc-darker-blue: hsl(217, 54%, 11%);
   --cc-dark-blue: hsl(216, 50%, 16%);
-  --cc-white: hsl(0%, 0%, 100%);
+  --cc-white: hsl(0, 0%, 100%);
 
   --ff-outfit: "Outfit";
   --fw-light: 300;
@@ -82,4 +82,31 @@ h6 {
 body {
   display: grid;
   place-items: center;
+  background-color: var(--cc-darker-blue);
+  font: 1.1rem var(--ff-outfit), sans-sherif;
+}
+.nft-card {
+  background-color: var(--cc-dark-blue);
+  padding: 1.2rem;
+  width: 23.438rem;
+  border-radius: 10px;
+
+  display: grid;
+  gap: 1rem;
+}
+.nft-card__image {
+  border-radius: 10px;
+}
+.nft-card__price {
+  color: var(--cc-cyan);
+}
+:is(.nft-card__name, .owner-name) {
+  color: var(--cc-white);
+}
+:is(.nft-card__name:hover, .owner-name:hover) {
+  color: var(--cc-cyan);
+  cursor: pointer;
+}
+:is(.nft-card__info, .nft-card__timeline, .credit) {
+  color: var(--cc-soft-blue);
 }
