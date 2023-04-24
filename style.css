@@ -121,19 +121,19 @@ body {
   flex-direction: row;
   gap: 0.5rem;
 }
-[data-price="price"]::before {
+[data-price="price"]::before,
+[data-time="time"]::before {
   display: inline-block;
   content: "";
-  background-image: url(./images/icon-ethereum.svg);
   background-repeat: no-repeat;
+}
+[data-price="price"]::before {
+  background-image: url(./images/icon-ethereum.svg);
   width: 10px;
   margin-top: 2px;
 }
 [data-time="time"]::before {
-  display: inline-block;
-  content: "";
   background-image: url(./images/icon-clock.svg);
-  background-repeat: no-repeat;
   width: 15px;
   margin-top: 3px;
 }
