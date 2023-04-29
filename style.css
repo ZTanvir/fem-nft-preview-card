@@ -110,11 +110,10 @@ body {
 :is(.nft-card__info, .nft-card__timeline, .credit) {
   color: var(--cc-soft-blue);
 }
-
 .nft-card__price-timeline {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-bottom: 0.5rem;
 }
 :is(.nft-card__price, .nft-card__timeline) {
   display: flex;
@@ -136,4 +135,15 @@ body {
   background-image: url(./images/icon-clock.svg);
   width: 15px;
   margin-top: 3px;
+}
+.nft-card__owner-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-top: 1px solid rgba(139, 172, 218, 0.2);
+}
+.owner-image {
+  width: 10%;
+  height: auto;
 }
