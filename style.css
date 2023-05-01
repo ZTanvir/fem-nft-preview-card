@@ -100,6 +100,12 @@ body {
 .nft-card__price {
   color: var(--cc-cyan);
 }
+.nft-card__name {
+  font-size: 18px;
+}
+:is(.nft-card__info, .nft-card__price-timeline, .nft-card__owner-info) {
+  font-size: 16px;
+}
 :is(.nft-card__name, .owner-name) {
   color: var(--cc-white);
 }
